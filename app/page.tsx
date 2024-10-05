@@ -1,9 +1,15 @@
+import { NavBar } from "@/components/modules/navigationBar";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: `Home | LinkBeam`,
+  description: "Beam your links to your friends, in style.",
+};
 
 export default function Home() {
   return (
     <div className="h-full w-full">
-      <h1 className="text-heading-1 bg-pattern-gradient font-bold">LinkBeam</h1>
-      <p className="text-paragraph-1">Beam your links to your friends, in style.</p>
+      <NavBar />
     </div>
   );
 }

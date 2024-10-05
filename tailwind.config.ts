@@ -40,7 +40,7 @@ const config: Config = {
         'hero-inner': '785px',
       },
       fontFamily: {
-        poppins: ['Afacad Flux', 'sans-serif']
+        Afacad: ['Afacad Flux', 'sans-serif']
       },
       fontWeight: {
         normal: '400',
@@ -80,6 +80,7 @@ const config: Config = {
   ],
   daisyui: {
     themes: [
+      'light',
       'dracula'
     ]
   },

@@ -4,21 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
-  @apply outline-1 outline-red-500;
+  /* @apply outline outline-1 outline-red-500; */
 }
 
 body {
-  @apply bg-neutral-900 text-neutral-content h-screen w-screen;
+  @apply bg-base-100 text-neutral-content h-screen w-screen;
 }
 
 * {
-  font-family: "Afacad Flux", sans-serif;
+  font-family: 'Afacad Flux', sans-serif;
   font-optical-sizing: auto;
   /* font-weight: 900; */
-  font-variation-settings:
-    "slnt" 0;
+  font-variation-settings: 'slnt' 0;
 }
 
 @layer utilities {
@@ -27,12 +25,34 @@ body {
   }
 
   .bg-pattern-gradient {
-    background-image: linear-gradient(to right, #6347FA, #EDE9FE);
+    background-image: linear-gradient(to right, #6347fa, #ede9fe);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  /* .font-linkbeam {
+    @apply bg-gradient-to-br from-primary via-primary to-indigo-600 bg-clip-text text-transparent relative overflow-hidden transition-all duration-300 ease-in-out;
+  } */
+
+  .font-linkbeam {
+    background-image: linear-gradient(to right, #ff79c6, #654ece, #654ece, #ff79c6);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: backgroundRotation 10s linear infinite;
+  }
+
+  @keyframes backgroundRotation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
   }
 }
