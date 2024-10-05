@@ -6,10 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "git:prepare": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.9",
     "@supabase/supabase-js": "^2.44.3",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
     "axios": "^1.7.7",
     "next": "14.2.14",
     "react": "^18",
@@ -19,8 +24,6 @@
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
     "daisyui": "^4.12.12",
     "eslint": "^8",
     "eslint-config-next": "14.2.14",
