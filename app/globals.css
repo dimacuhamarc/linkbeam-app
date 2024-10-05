@@ -1,27 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  @apply outline-1 outline-red-500;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-neutral-900 text-neutral-content h-screen w-screen;
+}
+
+* {
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 900; */
+  font-variation-settings:
+    "slnt" 0;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .bg-pattern-gradient {
+    background-image: linear-gradient(to right, #6347FA, #EDE9FE);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

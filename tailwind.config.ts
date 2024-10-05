@@ -40,8 +40,7 @@ const config: Config = {
         'hero-inner': '785px',
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        vollkorn: ['Vollkorn', 'serif'],
+        poppins: ['Afacad Flux', 'sans-serif']
       },
       fontWeight: {
         normal: '400',
