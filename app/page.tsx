@@ -1,5 +1,6 @@
-import { NavBar } from "@/components/modules/navigationBar";
 import type { Metadata } from "next";
+import LandingPage from '@/src/components/resources/landingPage';
+import PublicLayoutProvider from '@/src/components/providers/layout/publicLayoutProvider';
 
 export const metadata: Metadata = {
   title: `Home | LinkBeam`,
@@ -8,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="h-full w-full">
-      <NavBar />
-    </div>
+    <PublicLayoutProvider>
+      <LandingPage />
+    </PublicLayoutProvider>
   );
 }

@@ -9,7 +9,7 @@
 }
 
 body {
-  @apply bg-base-100 text-neutral-content h-screen w-screen;
+  @apply bg-[#240E33] text-neutral-content h-screen w-screen;
 }
 
 * {

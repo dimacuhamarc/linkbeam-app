@@ -72,6 +72,7 @@ const config: Config = {
         "t-dark": '#21333D',
         "t-light": '#F2F2F2',
         "t-default": '#919191',
+        "t-hover": '#240E33',
       }
     },
   },

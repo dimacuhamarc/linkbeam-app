@@ -4,7 +4,7 @@ import { NAV_LINKS, AUTH_LINKS } from '@/src/utils/constants/app_constants';
 
 function NavContainer() {
   return (
-    <nav className="navbar flex justify-between items-center w-full bg-base-300 px-24">
+    <nav className="sticky top-0 z-50 navbar flex justify-between items-center w-full bg-base-300 px-24">
       <div className="flex items-center gap-2">
         <h1 className="text-heading-1 font-bold font-linkbeam inline-flex">LinkBeam</h1>
       </div>
